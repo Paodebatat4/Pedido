@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <style>
+            html, body {
+                height: 100%;
+            }
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background-color: #FF4747;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: cneter;
+            }
+            p{
+                color: white;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 27px;
+                font-weight: 600;
+                max-width: 400px;
+                text-align: center;
+                word-wrap: break-word;
+            }
+            button {
+                width: 260px;
+                padding: 10px;
+                margin-top: 20px;
+                font-size: 28px;
+                background-color: white;
+                border: 4px solid rgb(200, 8, 8);
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: rgb(255, 239, 239);
+            }
+            button:active {
+                background-color: rgb(255, 113, 113);
+                border-color: #ffd2d2;
+                color:white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p id="text"> Eu sei que eu te decepcionei hoje, e não consigo me perdoar por isso. Então fiz esse pedido de desculpas pra você... </br> Você aceita?</p>
+        <audio id="audio" src="https://www.myinstants.com//media/sounds/olha-o-porco-estourado.mp3" preload="auto"></audio>
+        <button id="playButton" onclick="olha0Porco()">Clique aqui 💙</button>
+    </body>
+
+    <script>
+        var audio = document.getElementById('audio');
+        var playButton = document.getElementById('playButton');
+        var text = document.getElementById("text");
+
+        function olha0Porco(){
+            audio.play();
+            text.textContent = "Minha cabeça tem andado a milhão nos últimos dias, tem muita coisa acontecendo aqui em casa que eu não te falo pra não tomar o seu tempo. E eu não sei o que tem acontecido comigo para estar agindo dessa forma com você, eu queria poder dizer isso pessoalmente, mas eu não vou conseguir esperar. Por isso fiz esse site pra te pedir perdão de uma maneira diferente kakaka. Sabe, eu fico com ciúme do Raven porque ele parece ser bem mais legal do que eu e por mais que seja brincadeira, eu acho estranho a forma que ele fala com você, tipo, pelo menos pra mim, se fosse com outras pessoas, eu não iria ficar falando dese jeito sabendo que o namorado dela tá no mesmo grupo que eu, e eu me sinto um pouco distante de você no grupo, tipo, você não fala tanto comigo no grupo quanto no privado. O que eu quero dizer é que eu sinceramente não sei o que houve pra do nada eu começar a agir assim, e eu disse pra você que iria parar de me rebaixar e tals, e eu vou. Eu não sei o que tá acontecendo com a minha cabeça, eu tõ com muito medo de acabar fazendo alguma merda comigo mesmo algum dia. Eu só... queria que você me desculpasse";
+            playButton.style.display = "none"
+        }
+    </script>
+</html>
